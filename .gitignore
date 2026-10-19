@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+# Large source media is kept locally and not committed
+/BI-6A Presentation-1(1).pdf
+/01 - CG Paymnet Plan.pdf
+/02 - Brochure - CG Residencia.pdf
+/section-1-video.mp4
+/aboutus-card.jpeg
+/zoomed-out look for centric-gazder project.jpeg
+/_pdf_text.txt
