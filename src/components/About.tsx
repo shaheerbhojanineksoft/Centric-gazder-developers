@@ -1,4 +1,5 @@
 import { Img } from './Img';
+import { Leadership } from './Leadership';
 import { Reveal } from './Reveal';
 import { SectionLabel } from './SectionLabel';
 import { site } from '../data/site';
@@ -72,15 +73,7 @@ export function About() {
             </div>
 
             <Reveal delay={120}>
-              <div className="mt-11 flex items-center gap-4 border-t border-ink/15 pt-6">
-                <span className="h-10 w-px bg-gold-deep" />
-                <div>
-                  <p className="font-serif text-xl font-semibold">{site.director}</p>
-                  <p className="mt-0.5 text-[9px] font-semibold uppercase tracking-[0.24em] text-ink/45">
-                    Director
-                  </p>
-                </div>
-              </div>
+              <Leadership />
             </Reveal>
           </div>
 

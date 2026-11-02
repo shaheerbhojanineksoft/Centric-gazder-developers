@@ -95,7 +95,7 @@ export function Contact() {
                 <div>
                   <p className="font-serif text-2xl text-cream">{site.director}</p>
                   <p className="mt-0.5 text-[9px] font-semibold uppercase tracking-[0.24em] text-cream/40">
-                    Director &middot; {site.legalName}
+                    {site.directorTitle} &middot; {site.legalName}
                   </p>
                 </div>
               </div>
