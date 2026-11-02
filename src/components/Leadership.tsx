@@ -1,7 +1,7 @@
 import { leadership } from '../data/site';
 
 export function Leadership() {
-  const { director, ceos } = leadership;
+  const { chairman, directors } = leadership;
 
   return (
     <div className="mt-11 border-t border-ink/15 pt-8">
@@ -9,20 +9,18 @@ export function Leadership() {
         Leadership
       </p>
 
-      {/* Director — featured */}
       <div className="mt-6 flex items-start gap-4">
         <span className="mt-1 h-12 w-px shrink-0 bg-gold-deep" aria-hidden />
         <div>
-          <p className="font-serif text-2xl font-semibold text-ink">{director.name}</p>
+          <p className="font-serif text-2xl font-semibold text-ink">{chairman.name}</p>
           <p className="mt-1 text-[9px] font-semibold uppercase tracking-[0.24em] text-ink/45">
-            {director.title}
+            {chairman.title}
           </p>
         </div>
       </div>
 
-      {/* CEOs — clean list under Director */}
       <ul className="mt-8 grid gap-0 sm:grid-cols-2">
-        {ceos.map((person, index) => (
+        {directors.map((person, index) => (
           <li
             key={person.name}
             className="flex items-baseline justify-between gap-4 border-t border-ink/10 py-4 pr-2 sm:odd:pr-6 sm:even:pl-6"

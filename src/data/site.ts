@@ -1,13 +1,13 @@
 export const leadership = {
-  director: {
+  chairman: {
     name: 'Basit Gazdar',
-    title: 'Director',
+    title: 'Chairman',
   },
-  ceos: [
-    { name: 'Zaid Gazdar', title: 'CEO' },
-    { name: 'Fehad Gazdar', title: 'CEO' },
-    { name: 'Mubbashir Gazdar', title: 'CEO' },
-    { name: 'Ubaid Gazdar', title: 'CEO' },
+  directors: [
+    { name: 'Zaid Gazdar', title: 'Director' },
+    { name: 'Fehad Gazdar', title: 'Director' },
+    { name: 'Mubbashir Gazdar', title: 'Director' },
+    { name: 'Ubaid Gazdar', title: 'Director' },
   ],
 } as const;
 
@@ -15,8 +15,8 @@ export const site = {
   company: 'Centric Gazdar',
   legalName: 'Centric Gazdar Builders & Developers',
   tagline: 'Builders & Developers',
-  director: leadership.director.name,
-  directorTitle: leadership.director.title,
+  director: leadership.chairman.name,
+  directorTitle: leadership.chairman.title,
   phoneDisplay: '+92 300 2511927',
   phoneHref: 'tel:+923002511927',
   email: 'zaid@centricgazdar.com.pk',
